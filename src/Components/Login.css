@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5%;
+  min-height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    232deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 51, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.todoImg {
+  width: 45%;
+  border-radius: 50%;
+  transition: border-radius 0.5s ease, box-shadow 0.5s ease;
+}
+
+.todoImg:hover {
+  border-radius: 0%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  background-color: rgb(213, 235, 235);
+  width: 35%;
+  border-radius: 15px;
+}
+
+.login-form h2 {
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.emailInput {
+  display: flex;
+  margin: 0 auto;
+  width: 75%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.email {
+  width: 100%;
+  padding: 20px;
+  border: 0.5px solid #cecccc;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+}
+
+.password-input {
+  display: flex;
+  margin: 0 auto;
+  width: 75%;
+  margin-top: 5px;
+  border: 0.5px solid #cecccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.password-input input {
+  border: none;
+  margin-left: 20px;
+  background: transparent;
+  width: 75%;
+  outline: none;
+}
+
+.password-input button {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 35%;
+  height: 45px;
+  cursor: pointer;
+}
+
+.signup-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.signup-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 20%;
+  height: 35px;
+  margin: 10px auto;
+  background-color: rgb(63, 63, 117);
+  color: #cecccc;
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .login-form {
+    width: 65%;
+  }
+  .todoImg {
+    display: none;
+  }
+  .login-container:hover .todoImg {
+    border-radius: 0%;
+    box-shadow: none;
+  }
+}
